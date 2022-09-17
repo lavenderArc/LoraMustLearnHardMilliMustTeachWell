@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.milli.tutorials.pattern.strategy.v3.DecoyDuck</OriginalElement>
+  <nodes>
+    <node x="-79.0" y="166.5">com.milli.tutorials.pattern.strategy.v3.FlyWithWings</node>
+    <node x="443.0" y="269.0">com.milli.tutorials.pattern.strategy.v3.MallardDuck</node>
+    <node x="604.0" y="269.0">com.milli.tutorials.pattern.strategy.v3.DecoyDuck</node>
+    <node x="418.75" y="64.0">com.milli.tutorials.pattern.strategy.v3.QuackBehavior</node>
+    <node x="602.0" y="166.5">com.milli.tutorials.pattern.strategy.v3.Quack</node>
+    <node x="269.0" y="269.0">com.milli.tutorials.pattern.strategy.v3.RedHeadDuck</node>
+    <node x="717.0" y="166.5">com.milli.tutorials.pattern.strategy.v3.MuteQuack</node>
+    <node x="104.25" y="64.0">com.milli.tutorials.pattern.strategy.v3.FlyBehavior</node>
+    <node x="90.0" y="166.5">com.milli.tutorials.pattern.strategy.v3.FlyNoWay</node>
+    <node x="115.0" y="269.0">com.milli.tutorials.pattern.strategy.v3.ModelDuck</node>
+    <node x="479.0" y="166.5">com.milli.tutorials.pattern.strategy.v3.Squeak</node>
+    <node x="233.0" y="142.0">com.milli.tutorials.pattern.strategy.v3.Duck</node>
+    <node x="-45.0" y="269.0">com.milli.tutorials.pattern.strategy.v3.RubberDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.ModelDuck" target="com.milli.tutorials.pattern.strategy.v3.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="182.0" y="244.0" />
+      <point x="346.0" y="244.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.RubberDuck" target="com.milli.tutorials.pattern.strategy.v3.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="25.0" y="244.0" />
+      <point x="346.0" y="244.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.Duck" target="com.milli.tutorials.pattern.strategy.v3.QuackBehavior" relationship="TO_ONE">
+      <point x="0.0" y="-38.5" />
+      <point x="346.0" y="122.0" />
+      <point x="458.25" y="122.0" />
+      <point x="-39.5" y="14.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.Quack" target="com.milli.tutorials.pattern.strategy.v3.QuackBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="649.5" y="112.0" />
+      <point x="537.25" y="112.0" />
+      <point x="39.5" y="14.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.MallardDuck" target="com.milli.tutorials.pattern.strategy.v3.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="513.5" y="244.0" />
+      <point x="346.0" y="244.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.FlyNoWay" target="com.milli.tutorials.pattern.strategy.v3.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="151.5" y="122.0" />
+      <point x="73.5" y="122.0" />
+      <point x="73.5" y="112.0" />
+      <point x="137.5" y="112.0" />
+      <point x="-33.25" y="14.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.MuteQuack" target="com.milli.tutorials.pattern.strategy.v3.QuackBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="784.0" y="122.0" />
+      <point x="649.5" y="122.0" />
+      <point x="649.5" y="112.0" />
+      <point x="537.25" y="112.0" />
+      <point x="39.5" y="14.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.Duck" target="com.milli.tutorials.pattern.strategy.v3.FlyBehavior" relationship="TO_ONE">
+      <point x="0.0" y="-38.5" />
+      <point x="346.0" y="122.0" />
+      <point x="204.0" y="122.0" />
+      <point x="33.25" y="14.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.FlyWithWings" target="com.milli.tutorials.pattern.strategy.v3.FlyBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-4.5" y="122.0" />
+      <point x="73.5" y="122.0" />
+      <point x="73.5" y="112.0" />
+      <point x="137.5" y="112.0" />
+      <point x="-33.25" y="14.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.RedHeadDuck" target="com.milli.tutorials.pattern.strategy.v3.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.DecoyDuck" target="com.milli.tutorials.pattern.strategy.v3.Duck" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="670.0" y="244.0" />
+      <point x="346.0" y="244.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.strategy.v3.Squeak" target="com.milli.tutorials.pattern.strategy.v3.QuackBehavior" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="530.5" y="122.0" />
+      <point x="649.5" y="122.0" />
+      <point x="649.5" y="112.0" />
+      <point x="537.25" y="112.0" />
+      <point x="39.5" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="396.0000000000001" y="190.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

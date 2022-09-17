@@ -16,7 +16,7 @@ class DuckTest {
 
     @Test
     public void testMallardDuck() {
-        Duck duck = new MallardDuck();
+        Duck duck = new MallardDuck(new Quack(), new FlyWithWings());
         testDuckMethod(duck);
     }
 

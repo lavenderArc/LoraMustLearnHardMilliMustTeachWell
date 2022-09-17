@@ -7,8 +7,8 @@ package com.milli.tutorials.pattern.strategy.v3;
  **/
 public class MallardDuck extends Duck {
     // set behavior by constructor
-    public MallardDuck() {
-        quackBehavior = new Quack();
-        flyBehavior = new FlyWithWings();
+    public MallardDuck(QuackBehavior quackBehavior, FlyBehavior flyBehavior) {
+        this.quackBehavior = quackBehavior;
+        this.flyBehavior = flyBehavior;
     }
 }

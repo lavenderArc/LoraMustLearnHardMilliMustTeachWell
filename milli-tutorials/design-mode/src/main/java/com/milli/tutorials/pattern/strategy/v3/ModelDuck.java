@@ -9,10 +9,6 @@ import lombok.extern.log4j.Log4j2;
  **/
 @Log4j2
 public class ModelDuck extends Duck {
-    public ModelDuck() {
-        flyBehavior = new FlyNoWay();
-        quackBehavior = new Quack();
-    }
 
     @Override
     public void display() {
