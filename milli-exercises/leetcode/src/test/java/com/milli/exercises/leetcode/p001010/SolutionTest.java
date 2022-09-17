@@ -1,14 +1,13 @@
 package com.milli.exercises.leetcode.p001010;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+@Log4j2
 class SolutionTest {
-    static Logger log = LogManager.getLogger(SolutionTest.class);
 
     @BeforeAll
     static void beforeAll() {

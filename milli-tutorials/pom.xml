@@ -10,5 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>milli-tutorials</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>design-mode</module>
+    </modules>
 
 </project>
