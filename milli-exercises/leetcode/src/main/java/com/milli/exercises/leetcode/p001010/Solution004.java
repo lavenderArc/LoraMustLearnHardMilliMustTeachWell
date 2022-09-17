@@ -1,24 +1,12 @@
-package com.milli.exercises.leetcode.p04;
+package com.milli.exercises.leetcode.p001010;
 
-public class Solution {
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.findMedianSortedArrays(new int[]{1, 3}, new int[]{2}));
-        System.out.println(solution.findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4}));
-        System.out.println(solution.findMedianSortedArrays(new int[]{0, 0}, new int[]{0, 0}));
-        System.out.println(solution.findMedianSortedArrays(new int[]{}, new int[]{1}));
-        System.out.println(solution.findMedianSortedArrays(new int[]{2}, new int[]{}));
-        System.out.println(solution.findMedianSortedArrays(new int[]{1, 3, 5}, new int[]{2, 2, 2}));
-        System.out.println(solution.findMedianSortedArrays(new int[]{1, 1, 1, 1}, new int[]{2, 2, 2}));
-    }
-
+public class Solution004 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int midIndex01, midIndex02;
         midIndex01 = midIndex02 = (nums1.length + nums2.length) / 2;
         midIndex01 = midIndex01 - (nums1.length + nums2.length + 1) % 2;
 
-        final int MIN_VAL = -100000000;
+        final int MIN_VAL = Integer.MIN_VALUE;
         int val, midVal01 = MIN_VAL, midVal02 = MIN_VAL;
         boolean use02;
         for (int i1 = 0, i2 = 0, index = -1; ; ) {

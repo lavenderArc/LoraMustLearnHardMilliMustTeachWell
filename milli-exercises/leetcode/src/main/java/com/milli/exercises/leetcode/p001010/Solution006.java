@@ -1,17 +1,8 @@
-package com.milli.exercises.leetcode.p06;
+package com.milli.exercises.leetcode.p001010;
 
 import java.util.Arrays;
 
-class Solution {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        String result;
-        result = solution.convert("ABC", 2);
-        System.out.println(result);
-        System.out.println(result.equals("ABC"));
-    }
-
+class Solution006 {
     public String convert(String s, int numRows) {
         if (s.length() < numRows || numRows < 2) {
             return s;
