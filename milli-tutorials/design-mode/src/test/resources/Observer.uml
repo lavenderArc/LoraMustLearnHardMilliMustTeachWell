@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.milli.tutorials.pattern.observer.v2.Observer</OriginalElement>
+  <nodes>
+    <node x="74.43103448275866" y="9.0">com.milli.tutorials.pattern.observer.v2.Observer</node>
+    <node x="-206.53879310344826" y="436.0">com.milli.tutorials.pattern.observer.v2.CurrentConditionDisplay</node>
+    <node x="110.93103448275866" y="219.0">com.milli.tutorials.pattern.observer.v2.DisplayElement</node>
+    <node x="-246.0560344827586" y="-14.0">com.milli.tutorials.pattern.observer.v2.Subject</node>
+    <node x="233.46120689655174" y="447.5">com.milli.tutorials.pattern.observer.v2.ForecastDisplay</node>
+    <node x="44.461206896551744" y="447.5">com.milli.tutorials.pattern.observer.v2.StatisticsDisplay</node>
+    <node x="-327.0" y="138.0">com.milli.tutorials.pattern.observer.v2.WeatherData</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.milli.tutorials.pattern.observer.v2.StatisticsDisplay" target="com.milli.tutorials.pattern.observer.v2.Observer" relationship="REALIZATION">
+      <point x="42.25" y="-38.5" />
+      <point x="171.21120689655174" y="415.0" />
+      <point x="261.0" y="415.0" />
+      <point x="261.0" y="405.0" />
+      <point x="305.3189655172414" y="405.0" />
+      <point x="305.3189655172414" y="117.0" />
+      <point x="284.4310344827586" y="117.0" />
+      <point x="284.4310344827586" y="107.0" />
+      <point x="170.43103448275866" y="107.0" />
+      <point x="32.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.ForecastDisplay" target="com.milli.tutorials.pattern.observer.v2.WeatherData" relationship="TO_ONE">
+      <point x="-41.5" y="-38.5" />
+      <point x="274.96120689655174" y="385.0" />
+      <point x="-163.5" y="385.0" />
+      <point x="0.0" y="108.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.ForecastDisplay" target="com.milli.tutorials.pattern.observer.v2.Observer" relationship="REALIZATION">
+      <point x="41.5" y="-38.5" />
+      <point x="357.96120689655174" y="415.0" />
+      <point x="413.46120689655174" y="415.0" />
+      <point x="413.46120689655174" y="117.0" />
+      <point x="284.4310344827586" y="117.0" />
+      <point x="284.4310344827586" y="107.0" />
+      <point x="170.43103448275866" y="107.0" />
+      <point x="32.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.StatisticsDisplay" target="com.milli.tutorials.pattern.observer.v2.WeatherData" relationship="TO_ONE">
+      <point x="-42.25" y="-38.5" />
+      <point x="86.71120689655174" y="385.0" />
+      <point x="-163.5" y="385.0" />
+      <point x="0.0" y="108.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.StatisticsDisplay" target="com.milli.tutorials.pattern.observer.v2.DisplayElement" relationship="REALIZATION">
+      <point x="42.25" y="-38.5" />
+      <point x="171.21120689655174" y="415.0" />
+      <point x="261.0" y="415.0" />
+      <point x="261.0" y="395.0" />
+      <point x="192.4310344827586" y="395.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.WeatherData" target="com.milli.tutorials.pattern.observer.v2.Observer" relationship="TO_MANY">
+      <point x="81.75" y="-108.0" />
+      <point x="-81.75" y="107.0" />
+      <point x="106.43103448275866" y="107.0" />
+      <point x="-32.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.CurrentConditionDisplay" target="com.milli.tutorials.pattern.observer.v2.DisplayElement" relationship="REALIZATION">
+      <point x="57.75" y="-50.0" />
+      <point x="-33.288793103448256" y="415.0" />
+      <point x="111.0689655172414" y="415.0" />
+      <point x="111.0689655172414" y="405.0" />
+      <point x="192.4310344827586" y="405.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.CurrentConditionDisplay" target="com.milli.tutorials.pattern.observer.v2.WeatherData" relationship="TO_ONE">
+      <point x="-57.75" y="-50.0" />
+      <point x="-148.78879310344826" y="385.0" />
+      <point x="-163.5" y="385.0" />
+      <point x="0.0" y="108.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.ForecastDisplay" target="com.milli.tutorials.pattern.observer.v2.DisplayElement" relationship="REALIZATION">
+      <point x="41.5" y="-38.5" />
+      <point x="357.96120689655174" y="415.0" />
+      <point x="413.46120689655174" y="415.0" />
+      <point x="413.46120689655174" y="375.0" />
+      <point x="192.4310344827586" y="375.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.CurrentConditionDisplay" target="com.milli.tutorials.pattern.observer.v2.Observer" relationship="REALIZATION">
+      <point x="57.75" y="-50.0" />
+      <point x="-33.288793103448256" y="415.0" />
+      <point x="111.0689655172414" y="415.0" />
+      <point x="111.0689655172414" y="395.0" />
+      <point x="90.18103448275866" y="395.0" />
+      <point x="90.18103448275866" y="117.0" />
+      <point x="284.4310344827586" y="117.0" />
+      <point x="284.4310344827586" y="107.0" />
+      <point x="170.43103448275866" y="107.0" />
+      <point x="32.0" y="27.0" />
+    </edge>
+    <edge source="com.milli.tutorials.pattern.observer.v2.WeatherData" target="com.milli.tutorials.pattern.observer.v2.Subject" relationship="REALIZATION">
+      <point x="-81.75" y="-108.0" />
+      <point x="-245.25" y="117.0" />
+      <point x="-126.0560344827586" y="117.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.4947368421052631" showDependencies="true" x="-279.33450704225345" y="141.2112676056338" />
+  <SelectedNodes>
+    <node>com.milli.tutorials.pattern.observer.v2.Observer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
